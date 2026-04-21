@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UdaanJEE OS</title>
+    <style>
+      :root {
+        --bg: #f7f4ee;
+        --surface: #fffdf8;
+        --text: #1f2933;
+        --primary: #0f766e;
+        --accent: #f59e0b;
+      }
+      body {
+        margin: 0;
+        font-family: "Segoe UI", "Noto Sans", sans-serif;
+        background: radial-gradient(circle at top left, #fef3c7 0%, var(--bg) 45%, #d1fae5 100%);
+        color: var(--text);
+      }
+      .container {
+        max-width: 920px;
+        margin: 0 auto;
+        padding: 56px 20px;
+      }
+      .card {
+        background: var(--surface);
+        border: 1px solid #e5e7eb;
+        border-radius: 16px;
+        padding: 28px;
+        box-shadow: 0 10px 30px rgba(15, 118, 110, 0.08);
+      }
+      h1 {
+        margin: 0 0 8px;
+        font-size: 2.2rem;
+        color: var(--primary);
+      }
+      p { line-height: 1.6; }
+      .badge {
+        display: inline-block;
+        padding: 6px 10px;
+        border-radius: 999px;
+        background: #ecfeff;
+        border: 1px solid #a5f3fc;
+        color: #0e7490;
+        font-size: 0.85rem;
+        margin-bottom: 12px;
+      }
+      .grid {
+        display: grid;
+        gap: 12px;
+        grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+        margin-top: 20px;
+      }
+      .tile {
+        border: 1px solid #e5e7eb;
+        border-radius: 12px;
+        padding: 14px;
+        background: #fff;
+      }
+      a {
+        color: var(--primary);
+        font-weight: 600;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="badge">Free Forever • Open Source • JEE Focused</div>
+        <h1>UdaanJEE OS</h1>
+        <p>
+          National-scale learning operating system for Class 11-12 JEE aspirants to manage
+          school, coaching, self-study, testing, analytics, and wellness in one platform.
+        </p>
+        <div class="grid">
+          <div class="tile"><strong>Planner Engine</strong><br />Adaptive schedule + backlog recovery</div>
+          <div class="tile"><strong>Assessment Stack</strong><br />Practice tests with diagnostics</div>
+          <div class="tile"><strong>AI + Analytics</strong><br />Weak-topic detection and guidance</div>
+          <div class="tile"><strong>Community Model</strong><br />Open governance and contribution</div>
+        </div>
+        <p style="margin-top: 22px;">
+          Repository: <a href="https://github.com/devrahulmaida-sketch/UdaanJEE-OS">github.com/devrahulmaida-sketch/UdaanJEE-OS</a>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
