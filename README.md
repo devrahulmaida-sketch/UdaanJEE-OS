@@ -34,6 +34,15 @@ Provide every learner with a professional-grade, zero-cost preparation ecosystem
 - Offline-friendly and low-bandwidth capable
 - Hindi-first with multilingual expansion
 
+## Documentation and Scope
+
+This repository includes platform architecture, service APIs, operations controls, and governance policy in detail.
+
+- Start from `docs/INDEX.md` for full documentation navigation.
+- Advanced platform capability map: `docs/product/advanced-feature-catalog.md`.
+- Implementation API examples: `docs/architecture/advanced-api-usage.md`.
+- Open contract spec: `docs/architecture/openapi/udaanjee-api.yaml`.
+
 ## Getting Started
 
 This repository is scaffolded for enterprise-grade collaborative development.
@@ -46,6 +55,7 @@ This repository is scaffolded for enterprise-grade collaborative development.
    - `docs/product/feature-universe.md`
    - `docs/architecture/platform-modules.md`
    - `docs/security/security-architecture.md`
+   - `docs/product/advanced-feature-catalog.md`
 
 ## Local Development
 
