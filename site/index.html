@@ -3,86 +3,162 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>UdaanJEE OS</title>
+    <title>UdaanJEE OS - Largest Free Open JEE Platform</title>
     <style>
       :root {
-        --bg: #f7f4ee;
-        --surface: #fffdf8;
-        --text: #1f2933;
-        --primary: #0f766e;
-        --accent: #f59e0b;
+        --bg-1: #fff7ed;
+        --bg-2: #ecfeff;
+        --ink: #1e293b;
+        --brand: #0f766e;
+        --accent: #ea580c;
+        --card: rgba(255, 255, 255, 0.85);
+        --line: #dbeafe;
       }
+      * { box-sizing: border-box; }
       body {
         margin: 0;
         font-family: "Segoe UI", "Noto Sans", sans-serif;
-        background: radial-gradient(circle at top left, #fef3c7 0%, var(--bg) 45%, #d1fae5 100%);
-        color: var(--text);
+        color: var(--ink);
+        background:
+          radial-gradient(1200px 500px at 5% -10%, #fde68a 0%, transparent 60%),
+          radial-gradient(1200px 500px at 100% 0%, #86efac 0%, transparent 55%),
+          linear-gradient(150deg, var(--bg-1), var(--bg-2));
       }
-      .container {
-        max-width: 920px;
+      .wrap {
+        max-width: 1120px;
         margin: 0 auto;
-        padding: 56px 20px;
+        padding: 40px 18px 70px;
       }
-      .card {
-        background: var(--surface);
-        border: 1px solid #e5e7eb;
-        border-radius: 16px;
+      .hero {
+        border: 1px solid var(--line);
+        border-radius: 20px;
+        background: var(--card);
+        backdrop-filter: blur(4px);
         padding: 28px;
-        box-shadow: 0 10px 30px rgba(15, 118, 110, 0.08);
+        box-shadow: 0 16px 40px rgba(15, 23, 42, 0.08);
+        animation: appear 600ms ease-out;
       }
-      h1 {
-        margin: 0 0 8px;
-        font-size: 2.2rem;
-        color: var(--primary);
-      }
-      p { line-height: 1.6; }
       .badge {
         display: inline-block;
-        padding: 6px 10px;
+        font-size: 12px;
+        letter-spacing: 0.4px;
         border-radius: 999px;
-        background: #ecfeff;
-        border: 1px solid #a5f3fc;
-        color: #0e7490;
-        font-size: 0.85rem;
-        margin-bottom: 12px;
+        padding: 7px 12px;
+        border: 1px solid #bae6fd;
+        background: #f0f9ff;
+        color: #0369a1;
+      }
+      h1 {
+        margin: 12px 0 8px;
+        font-size: clamp(30px, 6vw, 52px);
+        line-height: 1.05;
+        color: #115e59;
+      }
+      .sub {
+        margin: 0;
+        font-size: 17px;
+        line-height: 1.65;
+        max-width: 860px;
+      }
+      .cta {
+        margin-top: 18px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+      .btn {
+        text-decoration: none;
+        border: 1px solid transparent;
+        border-radius: 12px;
+        padding: 11px 14px;
+        font-weight: 700;
+        font-size: 14px;
+      }
+      .btn-primary { background: var(--brand); color: #fff; }
+      .btn-secondary { background: #fff; color: #0f172a; border-color: #cbd5e1; }
+      .stats {
+        margin-top: 18px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+        gap: 10px;
+      }
+      .stat {
+        border: 1px solid #e2e8f0;
+        border-radius: 12px;
+        padding: 12px;
+        background: #fff;
+      }
+      .num { font-size: 24px; font-weight: 800; color: #0f766e; }
+      .lbl { font-size: 12px; color: #334155; }
+      h2 {
+        margin: 26px 0 10px;
+        font-size: 24px;
+        color: #0f172a;
       }
       .grid {
         display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
         gap: 12px;
-        grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
-        margin-top: 20px;
       }
       .tile {
-        border: 1px solid #e5e7eb;
-        border-radius: 12px;
+        border: 1px solid #dbeafe;
+        border-radius: 14px;
         padding: 14px;
         background: #fff;
       }
-      a {
-        color: var(--primary);
-        font-weight: 600;
+      .tile strong { color: #0f766e; }
+      .foot {
+        margin-top: 24px;
+        font-size: 14px;
+      }
+      a { color: #0f766e; font-weight: 700; }
+      @keyframes appear {
+        from { opacity: 0; transform: translateY(8px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      @media (max-width: 640px) {
+        .hero { padding: 20px; }
       }
     </style>
   </head>
   <body>
-    <div class="container">
-      <div class="card">
-        <div class="badge">Free Forever • Open Source • JEE Focused</div>
+    <main class="wrap">
+      <section class="hero">
+        <span class="badge">Largest Free Open-Source JEE Platform Mission</span>
         <h1>UdaanJEE OS</h1>
-        <p>
-          National-scale learning operating system for Class 11-12 JEE aspirants to manage
-          school, coaching, self-study, testing, analytics, and wellness in one platform.
+        <p class="sub">
+          A national-scale, free-forever learning operating system for JEE aspirants. Built to unify
+          school, coaching, self-study, testing, mentorship, analytics, and well-being in one open platform.
         </p>
-        <div class="grid">
-          <div class="tile"><strong>Planner Engine</strong><br />Adaptive schedule + backlog recovery</div>
-          <div class="tile"><strong>Assessment Stack</strong><br />Practice tests with diagnostics</div>
-          <div class="tile"><strong>AI + Analytics</strong><br />Weak-topic detection and guidance</div>
-          <div class="tile"><strong>Community Model</strong><br />Open governance and contribution</div>
+        <div class="cta">
+          <a class="btn btn-primary" href="https://github.com/devrahulmaida-sketch/UdaanJEE-OS">Open Repository</a>
+          <a class="btn btn-secondary" href="https://devrahulmaida-sketch.github.io/UdaanJEE-OS/">Live Website</a>
         </div>
-        <p style="margin-top: 22px;">
-          Repository: <a href="https://github.com/devrahulmaida-sketch/UdaanJEE-OS">github.com/devrahulmaida-sketch/UdaanJEE-OS</a>
-        </p>
-      </div>
-    </div>
+        <div class="stats">
+          <div class="stat"><div class="num">100+</div><div class="lbl">planned free features</div></div>
+          <div class="stat"><div class="num">10</div><div class="lbl">core domain modules</div></div>
+          <div class="stat"><div class="num">24 mo</div><div class="lbl">master roadmap</div></div>
+          <div class="stat"><div class="num">0 Rs</div><div class="lbl">student pricing forever</div></div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Platform Capabilities</h2>
+        <div class="grid">
+          <article class="tile"><strong>Adaptive Planner</strong><br />Backlog recovery, energy-based scheduling, coaching sync.</article>
+          <article class="tile"><strong>Assessment Intelligence</strong><br />Main + Advanced mocks, diagnostics, action plans.</article>
+          <article class="tile"><strong>Doubt + Mentorship</strong><br />Hint ladders, mentor rooms, moderated peer learning.</article>
+          <article class="tile"><strong>AI + Analytics</strong><br />Weakness prediction and intervention recommendations.</article>
+          <article class="tile"><strong>Wellness Stack</strong><br />Burnout prevention, sleep-study balance, consistency health.</article>
+          <article class="tile"><strong>Offline + Multilingual</strong><br />Low-bandwidth mode, Hindi-first, translation workflows.</article>
+          <article class="tile"><strong>Open Plugin SDK</strong><br />Educator and NGO extensions through safe plugin contracts.</article>
+          <article class="tile"><strong>Self-Host Ready</strong><br />Docker + Kubernetes baseline for schools and communities.</article>
+        </div>
+      </section>
+
+      <p class="foot">
+        Docs and architecture available in repository: <a href="https://github.com/devrahulmaida-sketch/UdaanJEE-OS">github.com/devrahulmaida-sketch/UdaanJEE-OS</a>
+      </p>
+    </main>
   </body>
 </html>

@@ -1,0 +1,14 @@
+{
+  "platform": "UdaanJEE OS",
+  "policy": "free-forever",
+  "features": [
+    {"id": "planner-adaptive", "name": "Adaptive Planner", "tier": "free", "status": "planned"},
+    {"id": "mock-main-advanced", "name": "JEE Main + Advanced Mock Stack", "tier": "free", "status": "planned"},
+    {"id": "doubt-image", "name": "Image Doubt Resolution", "tier": "free", "status": "planned"},
+    {"id": "mentor-hours", "name": "Mentor Office Hours", "tier": "free", "status": "planned"},
+    {"id": "offline-sync", "name": "Offline Sync", "tier": "free", "status": "planned"},
+    {"id": "wellness", "name": "Burnout Prevention Toolkit", "tier": "free", "status": "planned"},
+    {"id": "scholarship", "name": "Scholarship Tracker", "tier": "free", "status": "planned"},
+    {"id": "plugin-sdk", "name": "Open Plugin SDK", "tier": "free", "status": "planned"}
+  ]
+}
