@@ -1,0 +1,13 @@
+{
+  "studentId": "demo-student-1",
+  "goals": [
+    {"scope": "daily", "title": "30 focused questions", "target": 30, "current": 24},
+    {"scope": "weekly", "title": "3 mock tests", "target": 3, "current": 2},
+    {"scope": "monthly", "title": "Finish 2 major backlog chapters", "target": 2, "current": 1}
+  ],
+  "habits": [
+    {"name": "Morning revision", "streak": 11},
+    {"name": "Doubt log update", "streak": 7},
+    {"name": "Sleep before 11:30 PM", "streak": 5}
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "version": "1.0",
+  "subjects": [
+    {
+      "name": "Physics",
+      "chapters": [
+        {
+          "chapter": "Kinematics",
+          "questions": [
+            {"year": 2025, "exam": "JEE Main", "id": "pyq-phy-kin-2025-01", "difficulty": 3},
+            {"year": 2024, "exam": "JEE Main", "id": "pyq-phy-kin-2024-02", "difficulty": 2}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Mathematics",
+      "chapters": [
+        {
+          "chapter": "Quadratic Equations",
+          "questions": [
+            {"year": 2025, "exam": "JEE Main", "id": "pyq-math-quad-2025-01", "difficulty": 4},
+            {"year": 2023, "exam": "JEE Advanced", "id": "pyq-math-quad-2023-03", "difficulty": 5}
+          ]
+        }
+      ]
+    }
+  ]
+}

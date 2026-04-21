@@ -12,7 +12,7 @@
         --brand: #0f766e;
         --brand2: #0ea5e9;
         --warm: #ea580c;
-        --card: rgba(255, 255, 255, 0.86);
+        --card: rgba(255, 255, 255, 0.9);
         --line: #cbd5e1;
       }
       * { box-sizing: border-box; }
@@ -26,9 +26,9 @@
           linear-gradient(145deg, var(--bg0), var(--bg1));
       }
       .wrap {
-        max-width: 1180px;
+        max-width: 1200px;
         margin: 0 auto;
-        padding: 34px 16px 80px;
+        padding: 34px 16px 70px;
       }
       .hero {
         border: 1px solid #c7d2fe;
@@ -37,7 +37,6 @@
         backdrop-filter: blur(6px);
         padding: 28px;
         box-shadow: 0 18px 44px rgba(15, 23, 42, 0.1);
-        animation: reveal 500ms ease-out;
       }
       .tag {
         display: inline-block;
@@ -56,7 +55,7 @@
         line-height: 1.04;
         color: #0f766e;
       }
-      .sub { margin: 0; line-height: 1.62; font-size: 17px; max-width: 900px; }
+      .sub { margin: 0; line-height: 1.62; font-size: 17px; max-width: 930px; }
       .row {
         margin-top: 16px;
         display: flex;
@@ -101,18 +100,18 @@
         padding: 13px;
       }
       .tile strong { color: #0f766e; }
-      .docs {
+      .docs, .content {
         border: 1px solid #cbd5e1;
         border-radius: 16px;
-        background: #ffffffd6;
+        background: #ffffffde;
         padding: 16px;
       }
-      .docs-grid {
+      .docs-grid, .content-grid {
         display: grid;
         gap: 8px;
         grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
       }
-      .doc-link {
+      .doc-link, .content-link {
         display: block;
         text-decoration: none;
         border: 1px solid #e2e8f0;
@@ -121,7 +120,29 @@
         padding: 10px;
         color: #0f172a;
       }
-      .doc-link:hover { border-color: var(--brand2); }
+      .doc-link:hover, .content-link:hover { border-color: var(--brand2); }
+      .feature-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 10px;
+      }
+      .feature-col {
+        border: 1px solid #dbeafe;
+        border-radius: 12px;
+        padding: 12px;
+        background: #fff;
+      }
+      .feature-col h3 {
+        margin: 0 0 8px;
+        font-size: 16px;
+        color: #0f766e;
+      }
+      .feature-col ul {
+        margin: 0;
+        padding-left: 18px;
+        line-height: 1.5;
+        font-size: 14px;
+      }
       code {
         background: #f8fafc;
         padding: 1px 5px;
@@ -129,10 +150,6 @@
       }
       .foot { margin-top: 24px; font-size: 14px; color: #334155; }
       a { color: var(--brand); font-weight: 700; }
-      @keyframes reveal {
-        from { opacity: 0; transform: translateY(8px); }
-        to { opacity: 1; transform: translateY(0); }
-      }
       @media (max-width: 760px) {
         .hero { padding: 20px; }
       }
@@ -145,7 +162,8 @@
         <h1>UdaanJEE OS</h1>
         <p class="sub">
           A full learning operating system for JEE aspirants with multi-service APIs, adaptive planning,
-          recommendation intelligence, mock-test scoring, analytics interventions, and transparent governance.
+          recommendation intelligence, mock-test scoring, analytics interventions, coaching sync flows,
+          and transparent governance.
         </p>
         <div class="row">
           <a class="btn b1" href="https://github.com/devrahulmaida-sketch/UdaanJEE-OS">Open Repository</a>
@@ -153,9 +171,9 @@
         </div>
         <div class="stats">
           <div class="stat"><div class="n">70</div><div class="l">approved free core features</div></div>
+          <div class="stat"><div class="n">14</div><div class="l">features in-progress now</div></div>
           <div class="stat"><div class="n">7+</div><div class="l">domain services</div></div>
           <div class="stat"><div class="n">24 mo</div><div class="l">master product roadmap</div></div>
-          <div class="stat"><div class="n">3</div><div class="l">event schemas live</div></div>
           <div class="stat"><div class="n">0 Rs</div><div class="l">student pricing forever</div></div>
         </div>
       </section>
@@ -167,10 +185,60 @@
           <article class="tile"><strong>Learning Graph Intelligence</strong><br />Prerequisite-aware topic recommendations by student profile.</article>
           <article class="tile"><strong>JEE Assessment Stack</strong><br />Mock generation, negative marking scoring, subject-level metrics.</article>
           <article class="tile"><strong>Intervention Analytics</strong><br />Trend delta detection and guided recovery actions.</article>
-          <article class="tile"><strong>Security + Privacy</strong><br />Zero-trust controls, governance, abuse prevention architecture.</article>
-          <article class="tile"><strong>Deployment at Scale</strong><br />Docker, Kubernetes, Terraform modules and SRE runbooks.</article>
+          <article class="tile"><strong>Coaching Sync Workflows</strong><br />DPP tracker and missed-class catch-up planning data models.</article>
+          <article class="tile"><strong>Student Productivity</strong><br />Goals, habits, calendar reminders, and weekly progression loops.</article>
           <article class="tile"><strong>Open Data Contracts</strong><br />OpenAPI plus versioned JSON event schemas for platform consistency.</article>
-          <article class="tile"><strong>Plugin Ecosystem</strong><br />Safe extension model for educators, schools, and NGOs.</article>
+          <article class="tile"><strong>Scale and Governance</strong><br />Kubernetes, Terraform, SRE, and open governance charter.</article>
+        </div>
+      </section>
+
+      <section>
+        <h2>70 Features Snapshot</h2>
+        <div class="feature-list">
+          <div class="feature-col">
+            <h3>Planner + Learning</h3>
+            <ul>
+              <li>Onboarding and bridge readiness</li>
+              <li>Roadmap generator and unified timetable</li>
+              <li>Backlog recovery and weekly rebalance</li>
+              <li>Prerequisite graph and syllabus tracking</li>
+              <li>Revision scheduler and task prioritization</li>
+            </ul>
+          </div>
+          <div class="feature-col">
+            <h3>Assessment + Analytics</h3>
+            <ul>
+              <li>Chapter, mixed, and full mock tests</li>
+              <li>Negative marking auto-evaluation</li>
+              <li>Accuracy heatmaps and error taxonomy</li>
+              <li>Weak-topic detection and intervention engine</li>
+              <li>Trend dashboard and percentile estimation</li>
+            </ul>
+          </div>
+          <div class="feature-col">
+            <h3>Community + Platform</h3>
+            <ul>
+              <li>Doubt solving and mentor rooms</li>
+              <li>Goals, habits, calendar, and DPP sync</li>
+              <li>Offline, multilingual, and accessibility modes</li>
+              <li>API-first architecture and open schemas</li>
+              <li>Security, privacy, governance, and docs portal</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="content">
+        <h2>Live Content Packs</h2>
+        <div class="content-grid">
+          <a class="content-link" href="https://github.com/devrahulmaida-sketch/UdaanJEE-OS/blob/main/data/content/bridge/bridge-readiness-sample.json">Bridge Readiness Sample</a>
+          <a class="content-link" href="https://github.com/devrahulmaida-sketch/UdaanJEE-OS/blob/main/data/content/formula-sheets/physics-kinematics.json">Formula Sheet Sample</a>
+          <a class="content-link" href="https://github.com/devrahulmaida-sketch/UdaanJEE-OS/blob/main/data/content/concept-cards/math-quadratic.json">Concept Cards Sample</a>
+          <a class="content-link" href="https://github.com/devrahulmaida-sketch/UdaanJEE-OS/blob/main/data/content/pyq-sample.json">PYQ Sample Pack</a>
+          <a class="content-link" href="https://github.com/devrahulmaida-sketch/UdaanJEE-OS/blob/main/data/content/goals-habits-sample.json">Goals and Habits Sample</a>
+          <a class="content-link" href="https://github.com/devrahulmaida-sketch/UdaanJEE-OS/blob/main/data/content/exam-calendar-sample.json">Exam Calendar Sample</a>
+          <a class="content-link" href="https://github.com/devrahulmaida-sketch/UdaanJEE-OS/blob/main/data/content/coaching-sync-sample.json">Coaching Sync Sample</a>
+          <a class="content-link" href="https://github.com/devrahulmaida-sketch/UdaanJEE-OS/blob/main/data/free-features.json">All 70 Features Source</a>
         </div>
       </section>
 
@@ -178,18 +246,16 @@
         <h2>Repository Documentation Map</h2>
         <div class="docs-grid">
           <a class="doc-link" href="https://github.com/devrahulmaida-sketch/UdaanJEE-OS/blob/main/docs/INDEX.md">Documentation Index</a>
-          <a class="doc-link" href="https://github.com/devrahulmaida-sketch/UdaanJEE-OS/blob/main/docs/product/advanced-feature-catalog.md">Advanced Feature Catalog</a>
           <a class="doc-link" href="https://github.com/devrahulmaida-sketch/UdaanJEE-OS/blob/main/docs/product/all-70-features-plan.md">All 70 Features Plan</a>
           <a class="doc-link" href="https://github.com/devrahulmaida-sketch/UdaanJEE-OS/blob/main/docs/product/feature-details-1-70.md">Feature Details 1-70</a>
           <a class="doc-link" href="https://github.com/devrahulmaida-sketch/UdaanJEE-OS/blob/main/docs/architecture/advanced-api-usage.md">Advanced API Usage</a>
-          <a class="doc-link" href="https://github.com/devrahulmaida-sketch/UdaanJEE-OS/blob/main/docs/security/security-architecture.md">Security Architecture</a>
-          <a class="doc-link" href="https://github.com/devrahulmaida-sketch/UdaanJEE-OS/blob/main/docs/operations/disaster-recovery.md">Disaster Recovery</a>
           <a class="doc-link" href="https://github.com/devrahulmaida-sketch/UdaanJEE-OS/blob/main/docs/architecture/openapi/udaanjee-api.yaml">OpenAPI Contract</a>
+          <a class="doc-link" href="https://github.com/devrahulmaida-sketch/UdaanJEE-OS/blob/main/docs/security/security-architecture.md">Security Architecture</a>
         </div>
       </section>
 
       <p class="foot">
-        API examples are documented in <code>docs/architecture/advanced-api-usage.md</code> and endpoints are versioned under <code>/api/v1</code>.
+        API examples are documented in <code>docs/architecture/advanced-api-usage.md</code> and content packs live under <code>data/content</code>.
       </p>
     </main>
   </body>

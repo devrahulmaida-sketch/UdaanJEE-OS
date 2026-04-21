@@ -13,6 +13,18 @@ const topicGraph = JSON.parse(
 const studentProfiles = JSON.parse(
   readFileSync(resolve(rootDir, "data/student-profiles.demo.json"), "utf-8")
 );
+const pyqBank = JSON.parse(
+  readFileSync(resolve(rootDir, "data/content/pyq-sample.json"), "utf-8")
+);
+const goalsHabits = JSON.parse(
+  readFileSync(resolve(rootDir, "data/content/goals-habits-sample.json"), "utf-8")
+);
+const calendarData = JSON.parse(
+  readFileSync(resolve(rootDir, "data/content/exam-calendar-sample.json"), "utf-8")
+);
+const coachingSync = JSON.parse(
+  readFileSync(resolve(rootDir, "data/content/coaching-sync-sample.json"), "utf-8")
+);
 
 function sendJson(res, statusCode, payload) {
   res.writeHead(statusCode, { "Content-Type": "application/json" });
@@ -64,6 +76,26 @@ const server = createServer((req, res) => {
       recommendedCount: recommended.length,
       recommended
     });
+    return;
+  }
+
+  if (method === "GET" && url.pathname === "/v1/content/pyq") {
+    sendJson(res, 200, pyqBank);
+    return;
+  }
+
+  if (method === "GET" && url.pathname === "/v1/content/goals-habits") {
+    sendJson(res, 200, goalsHabits);
+    return;
+  }
+
+  if (method === "GET" && url.pathname === "/v1/content/calendar") {
+    sendJson(res, 200, calendarData);
+    return;
+  }
+
+  if (method === "GET" && url.pathname === "/v1/content/coaching-sync") {
+    sendJson(res, 200, coachingSync);
     return;
   }
 

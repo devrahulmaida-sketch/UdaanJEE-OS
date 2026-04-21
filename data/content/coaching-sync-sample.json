@@ -1,0 +1,12 @@
+{
+  "studentId": "demo-student-1",
+  "dpp": [
+    {"id": "dpp-phy-14", "subject": "Physics", "chapter": "Kinematics", "status": "submitted"},
+    {"id": "dpp-math-09", "subject": "Mathematics", "chapter": "Quadratic Equations", "status": "pending"},
+    {"id": "dpp-chem-11", "subject": "Chemistry", "chapter": "Atomic Structure", "status": "pending"}
+  ],
+  "missedClasses": [
+    {"date": "2026-04-18", "subject": "Physics", "recoveryPlan": "Watch recording + solve 20 questions"},
+    {"date": "2026-04-20", "subject": "Chemistry", "recoveryPlan": "Mentor recap + summary notes"}
+  ]
+}

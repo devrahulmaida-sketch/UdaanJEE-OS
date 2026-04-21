@@ -1,0 +1,9 @@
+{
+  "studentId": "demo-student-1",
+  "calendar": [
+    {"date": "2026-04-23", "type": "test", "title": "Mixed Mock Test 04"},
+    {"date": "2026-04-24", "type": "coaching", "title": "DPP Submission Deadline"},
+    {"date": "2026-04-26", "type": "revision", "title": "Weekly Weak Topic Audit"},
+    {"date": "2026-04-28", "type": "exam", "title": "Scholarship Test Registration Close"}
+  ]
+}
