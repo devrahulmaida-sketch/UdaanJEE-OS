@@ -1,7 +1,8 @@
 openapi: 3.1.0
 info:
   title: UdaanJEE API
-  version: 1.0.0
+  version: 1.1.0
+  description: Core API contract for UdaanJEE OS advanced platform services.
 servers:
   - url: https://api.udaanjee.org
 paths:
@@ -11,17 +12,118 @@ paths:
       responses:
         "200":
           description: Service health response
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/HealthResponse"
   /api/v1/features:
     get:
       summary: List free feature catalog
       responses:
         "200":
           description: Feature catalog response
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/FeatureCatalog"
+  /api/v1/roadmap:
+    get:
+      summary: Return 24-month roadmap content
+      responses:
+        "200":
+          description: Roadmap markdown response
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/RoadmapResponse"
   /api/v1/plans/generate:
     post:
       summary: Generate adaptive study plan
       requestBody:
         required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/PlanRequest"
       responses:
         "200":
           description: Generated plan response
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/PlanResponse"
+        "400":
+          description: Invalid request payload
+        "413":
+          description: Payload too large
+components:
+  schemas:
+    HealthResponse:
+      type: object
+      properties:
+        service: { type: string }
+        status: { type: string }
+        timestamp: { type: string, format: date-time }
+    Feature:
+      type: object
+      properties:
+        id: { type: string }
+        name: { type: string }
+        tier: { type: string }
+        status: { type: string }
+    FeatureCatalog:
+      type: object
+      properties:
+        platform: { type: string }
+        policy: { type: string }
+        features:
+          type: array
+          items:
+            $ref: "#/components/schemas/Feature"
+    RoadmapResponse:
+      type: object
+      properties:
+        title: { type: string }
+        format: { type: string }
+        content: { type: string }
+    PlanRequest:
+      type: object
+      properties:
+        mode:
+          type: string
+          enum: [school-heavy, coaching-heavy, balanced]
+        targetExam:
+          type: string
+        dailyHours:
+          type: number
+        hasBacklog:
+          type: boolean
+        weakTopics:
+          type: array
+          items: { type: string }
+    PlanBlock:
+      type: object
+      properties:
+        block: { type: string }
+        durationHours: { type: number }
+    Plan:
+      type: object
+      properties:
+        mode: { type: string }
+        targetExam: { type: string }
+        dailyHours: { type: number }
+        weakTopicFocus:
+          type: array
+          items: { type: string }
+        blocks:
+          type: array
+          items:
+            $ref: "#/components/schemas/PlanBlock"
+        nextReviewInDays: { type: integer }
+    PlanResponse:
+      type: object
+      properties:
+        status: { type: string }
+        generatedAt: { type: string, format: date-time }
+        plan:
+          $ref: "#/components/schemas/Plan"
