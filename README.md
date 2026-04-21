@@ -14,7 +14,16 @@ Provide every learner with a professional-grade, zero-cost preparation ecosystem
 - `services/*` - Core backend and AI services
 - `packages/*` - Shared UI, config, types, and design tokens
 - `infra/*` - Docker, Kubernetes, and Terraform deployment assets
-- `docs/*` - Architecture, governance, product specs, and deployment guides
+- `docs/*` - Architecture, governance, product specs, operations, and deployment guides
+- `data/*` - Open syllabus and question-bank schemas
+
+## Advanced Platform Layers
+
+- Domain microservice architecture with ADR governance
+- Event-driven contracts for progression, testing, and notifications
+- SRE-driven reliability model with SLOs and incident runbooks
+- Kubernetes baseline manifests for production-grade deployment
+- Open curriculum and assessment datasets for community extension
 
 ## Principles
 

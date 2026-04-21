@@ -1,0 +1,11 @@
+{
+  "board": "JEE",
+  "class": 11,
+  "subject": "Physics",
+  "chapters": [
+    { "id": "phy-11-01", "name": "Units and Dimensions", "weight": 1 },
+    { "id": "phy-11-02", "name": "Kinematics", "weight": 3 },
+    { "id": "phy-11-03", "name": "Laws of Motion", "weight": 4 },
+    { "id": "phy-11-04", "name": "Work Power Energy", "weight": 3 }
+  ]
+}

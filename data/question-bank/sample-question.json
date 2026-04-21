@@ -1,0 +1,12 @@
+{
+  "questionId": "q-math-001",
+  "exam": "JEE Main",
+  "subject": "Mathematics",
+  "chapter": "Quadratic Equations",
+  "difficulty": "medium",
+  "type": "single-correct",
+  "prompt": "If alpha and beta are roots of x^2 - 5x + 6 = 0, find alpha^2 + beta^2.",
+  "options": ["13", "25", "9", "7"],
+  "answer": "13",
+  "solution": "alpha + beta = 5, alpha*beta = 6 => alpha^2 + beta^2 = (alpha+beta)^2 - 2alpha beta = 25 - 12 = 13"
+}
