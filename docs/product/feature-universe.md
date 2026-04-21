@@ -41,3 +41,10 @@
 - Public analytics schema for research collaboration
 - Transparent recommendation model cards
 - Self-host deployment kits for schools and communities
+
+## Advanced Governance and Scale Features
+- Public Free-Forever Charter enforcement policy
+- Multi-tenant architecture for schools and NGO deployments
+- OpenAPI contract publishing and client SDK generation
+- Event schema registry for inter-service consistency
+- Disaster recovery drills and SLO-based release gates

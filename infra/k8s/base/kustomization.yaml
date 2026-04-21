@@ -5,4 +5,7 @@ resources:
   - namespace.yaml
   - api-gateway-deployment.yaml
   - api-gateway-service.yaml
+  - services/planner-deployment.yaml
+  - services/planner-service.yaml
+  - network-policy-default-deny.yaml
   - ingress.yaml

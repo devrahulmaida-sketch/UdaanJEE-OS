@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "test.attempt.submitted.v1",
+  "type": "object",
+  "required": ["eventId", "eventType", "timestamp", "studentId", "attemptId", "score", "maxScore"],
+  "properties": {
+    "eventId": {"type": "string"},
+    "eventType": {"const": "test.attempt.submitted"},
+    "timestamp": {"type": "string", "format": "date-time"},
+    "studentId": {"type": "string"},
+    "attemptId": {"type": "string"},
+    "score": {"type": "number"},
+    "maxScore": {"type": "number"},
+    "subjectBreakdown": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["subject", "score", "maxScore"],
+        "properties": {
+          "subject": {"type": "string"},
+          "score": {"type": "number"},
+          "maxScore": {"type": "number"}
+        }
+      }
+    }
+  }
+}

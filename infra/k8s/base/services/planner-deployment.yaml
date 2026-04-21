@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: planner-service
+  namespace: udaanjee
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: planner-service
+  template:
+    metadata:
+      labels:
+        app: planner-service
+    spec:
+      containers:
+        - name: planner-service
+          image: ghcr.io/devrahulmaida-sketch/udaanjee-os/planner-service:latest
+          ports:
+            - containerPort: 4001
+          readinessProbe:
+            httpGet:
+              path: /health
+              port: 4001
+            initialDelaySeconds: 5
+            periodSeconds: 10

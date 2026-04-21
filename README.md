@@ -21,9 +21,10 @@ Provide every learner with a professional-grade, zero-cost preparation ecosystem
 
 - Domain microservice architecture with ADR governance
 - Event-driven contracts for progression, testing, and notifications
-- SRE-driven reliability model with SLOs and incident runbooks
-- Kubernetes baseline manifests for production-grade deployment
-- Open curriculum and assessment datasets for community extension
+- SRE-driven reliability model with SLOs, DR targets, and incident runbooks
+- Security and privacy architecture with zero-trust controls
+- Kubernetes baseline manifests, network policies, and production deployment templates
+- Open curriculum, event schemas, and assessment datasets for community extension
 
 ## Principles
 
@@ -41,6 +42,10 @@ This repository is scaffolded for enterprise-grade collaborative development.
 2. Read `docs/architecture/system-overview.md`
 3. Read `docs/governance/open-source-model.md`
 4. Follow `CONTRIBUTING.md`
+5. Explore advanced docs:
+   - `docs/product/feature-universe.md`
+   - `docs/architecture/platform-modules.md`
+   - `docs/security/security-architecture.md`
 
 ## Local Development
 

@@ -1,0 +1,27 @@
+openapi: 3.1.0
+info:
+  title: UdaanJEE API
+  version: 1.0.0
+servers:
+  - url: https://api.udaanjee.org
+paths:
+  /api/v1/health:
+    get:
+      summary: Health check
+      responses:
+        "200":
+          description: Service health response
+  /api/v1/features:
+    get:
+      summary: List free feature catalog
+      responses:
+        "200":
+          description: Feature catalog response
+  /api/v1/plans/generate:
+    post:
+      summary: Generate adaptive study plan
+      requestBody:
+        required: true
+      responses:
+        "200":
+          description: Generated plan response
