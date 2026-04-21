@@ -1,0 +1,9 @@
+{
+  "subject": "Physics",
+  "chapter": "Kinematics",
+  "formulas": [
+    {"formula": "v = u + at", "usage": "constant acceleration final velocity"},
+    {"formula": "s = ut + (1/2)at^2", "usage": "displacement in uniformly accelerated motion"},
+    {"formula": "v^2 = u^2 + 2as", "usage": "velocity-displacement relation"}
+  ]
+}

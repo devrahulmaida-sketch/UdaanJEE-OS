@@ -1,0 +1,24 @@
+{
+  "set": "bridge-readiness-10-to-11",
+  "subject": "Mathematics",
+  "questions": [
+    {
+      "id": "bridge-math-1",
+      "type": "single-correct",
+      "difficulty": "easy",
+      "prompt": "Simplify: (a+b)^2 - (a-b)^2",
+      "options": ["2ab", "4ab", "a^2+b^2", "0"],
+      "answer": "4ab",
+      "concept": "algebraic identities"
+    },
+    {
+      "id": "bridge-math-2",
+      "type": "single-correct",
+      "difficulty": "medium",
+      "prompt": "If x + 1/x = 3, find x^2 + 1/x^2",
+      "options": ["5", "7", "9", "11"],
+      "answer": "7",
+      "concept": "expression transformation"
+    }
+  ]
+}

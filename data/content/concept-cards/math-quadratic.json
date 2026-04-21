@@ -1,0 +1,15 @@
+{
+  "topic": "Quadratic Equations",
+  "cards": [
+    {
+      "title": "Root Sum and Product",
+      "keyPoint": "For ax^2+bx+c=0, sum = -b/a and product = c/a",
+      "mistakeToAvoid": "Sign error in sum of roots"
+    },
+    {
+      "title": "Discriminant",
+      "keyPoint": "D=b^2-4ac decides nature of roots",
+      "mistakeToAvoid": "Incorrect interpretation of D<0 as no roots in complex domain"
+    }
+  ]
+}

@@ -40,6 +40,8 @@ This repository includes platform architecture, service APIs, operations control
 
 - Start from `docs/INDEX.md` for full documentation navigation.
 - Advanced platform capability map: `docs/product/advanced-feature-catalog.md`.
+- Complete 70-feature implementation plan: `docs/product/all-70-features-plan.md`.
+- Full feature-by-feature descriptions: `docs/product/feature-details-1-70.md`.
 - Implementation API examples: `docs/architecture/advanced-api-usage.md`.
 - Open contract spec: `docs/architecture/openapi/udaanjee-api.yaml`.
 

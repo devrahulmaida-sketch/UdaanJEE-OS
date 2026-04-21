@@ -10,6 +10,8 @@ UdaanJEE OS documentation is organized by domain for large-scale, contributor-fr
 - Feature Universe: `docs/product/feature-universe.md`
 - Launch Strategy: `docs/product/launch-strategy.md`
 - Advanced Feature Catalog: `docs/product/advanced-feature-catalog.md`
+- All 70 Features Plan: `docs/product/all-70-features-plan.md`
+- Feature Details 1-70: `docs/product/feature-details-1-70.md`
 
 ## Architecture
 - System Overview: `docs/architecture/system-overview.md`
