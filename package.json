@@ -1,0 +1,26 @@
+{
+  "name": "udaanjee-os",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": [
+    "apps/*",
+    "services/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:api-gateway": "npm run dev -w services/api-gateway",
+    "dev:planner": "npm run dev -w services/planner-service",
+    "dev:learning": "npm run dev -w services/learning-service",
+    "dev:assessment": "npm run dev -w services/assessment-service",
+    "dev:analytics": "npm run dev -w services/analytics-service",
+    "dev:ai": "npm run dev -w services/ai-service",
+    "dev:notification": "npm run dev -w services/notification-service",
+    "lint": "echo lint baseline ready",
+    "test": "echo test baseline ready",
+    "build": "echo build baseline ready"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "packageManager": "npm@10.9.0"
+}

@@ -1,0 +1,52 @@
+version: "3.9"
+
+services:
+  postgres:
+    image: postgres:16
+    environment:
+      POSTGRES_USER: udaan
+      POSTGRES_PASSWORD: udaan
+      POSTGRES_DB: udaanjee
+    ports:
+      - "5432:5432"
+
+  redis:
+    image: redis:7
+    ports:
+      - "6379:6379"
+
+  api-gateway:
+    image: node:20-alpine
+    working_dir: /workspace
+    volumes:
+      - ../../:/workspace
+    command: ["npm", "run", "dev:api-gateway"]
+    ports:
+      - "4000:4000"
+    depends_on:
+      - postgres
+      - redis
+
+  planner-service:
+    image: node:20-alpine
+    working_dir: /workspace
+    volumes:
+      - ../../:/workspace
+    command: ["npm", "run", "dev:planner"]
+    ports:
+      - "4001:4001"
+    depends_on:
+      - postgres
+      - redis
+
+  learning-service:
+    image: node:20-alpine
+    working_dir: /workspace
+    volumes:
+      - ../../:/workspace
+    command: ["npm", "run", "dev:learning"]
+    ports:
+      - "4002:4002"
+    depends_on:
+      - postgres
+      - redis

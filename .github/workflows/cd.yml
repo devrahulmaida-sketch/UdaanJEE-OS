@@ -1,0 +1,11 @@
+name: CD
+
+on:
+  workflow_dispatch:
+
+jobs:
+  deploy-placeholder:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Placeholder
+        run: echo "Deployment pipeline to be configured with target infrastructure"
