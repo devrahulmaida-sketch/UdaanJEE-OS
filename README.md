@@ -53,6 +53,10 @@ Use local infrastructure and core service containers:
 - `docker compose -f infra/docker/docker-compose.yml up`
 - Full guide: `docs/deployment/docker-compose.md`
 
+## Live Website
+
+- GitHub Pages: `https://devrahulmaida-sketch.github.io/UdaanJEE-OS/`
+
 ## License
 
 AGPL-3.0
