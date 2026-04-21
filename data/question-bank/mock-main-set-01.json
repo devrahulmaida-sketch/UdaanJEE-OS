@@ -1,0 +1,40 @@
+{
+  "version": "1.0",
+  "questions": [
+    {
+      "id": "q-phy-1",
+      "subject": "Physics",
+      "chapter": "Kinematics",
+      "difficulty": 3,
+      "correctOption": 2
+    },
+    {
+      "id": "q-math-1",
+      "subject": "Mathematics",
+      "chapter": "Quadratic Equations",
+      "difficulty": 4,
+      "correctOption": 1
+    },
+    {
+      "id": "q-chem-1",
+      "subject": "Chemistry",
+      "chapter": "Atomic Structure",
+      "difficulty": 2,
+      "correctOption": 3
+    },
+    {
+      "id": "q-phy-2",
+      "subject": "Physics",
+      "chapter": "Units and Dimensions",
+      "difficulty": 2,
+      "correctOption": 0
+    },
+    {
+      "id": "q-math-2",
+      "subject": "Mathematics",
+      "chapter": "Sets and Relations",
+      "difficulty": 2,
+      "correctOption": 2
+    }
+  ]
+}

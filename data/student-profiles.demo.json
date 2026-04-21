@@ -1,0 +1,17 @@
+{
+  "students": [
+    {
+      "studentId": "demo-student-1",
+      "weeklyHours": 42,
+      "completedTopics": ["math-sets", "phy-units"],
+      "weakTopics": ["phy-kinematics", "math-quadratic"],
+      "backlogHours": 9,
+      "burnoutRisk": 0.34,
+      "testHistory": [
+        {"testId": "t1", "score": 112, "maxScore": 300},
+        {"testId": "t2", "score": 128, "maxScore": 300},
+        {"testId": "t3", "score": 141, "maxScore": 300}
+      ]
+    }
+  ]
+}

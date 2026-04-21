@@ -1,9 +1,11 @@
 import { createServer } from "node:http";
 import { readFileSync } from "node:fs";
-import { resolve } from "node:path";
+import { dirname, resolve } from "node:path";
+import { fileURLToPath } from "node:url";
 
 const port = Number(process.env.PORT || 4000);
-const rootDir = resolve(process.cwd(), "../..");
+const serviceDir = dirname(fileURLToPath(import.meta.url));
+const rootDir = resolve(serviceDir, "../../..");
 
 const featureCatalog = JSON.parse(
   readFileSync(resolve(rootDir, "data/free-features.json"), "utf-8")

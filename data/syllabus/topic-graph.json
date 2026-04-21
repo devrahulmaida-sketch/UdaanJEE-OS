@@ -1,0 +1,53 @@
+{
+  "version": "1.0",
+  "topics": [
+    {
+      "id": "math-sets",
+      "subject": "Mathematics",
+      "name": "Sets and Relations",
+      "difficulty": 2,
+      "estimatedHours": 6,
+      "prerequisites": []
+    },
+    {
+      "id": "math-quadratic",
+      "subject": "Mathematics",
+      "name": "Quadratic Equations",
+      "difficulty": 3,
+      "estimatedHours": 10,
+      "prerequisites": ["math-sets"]
+    },
+    {
+      "id": "phy-units",
+      "subject": "Physics",
+      "name": "Units and Dimensions",
+      "difficulty": 2,
+      "estimatedHours": 5,
+      "prerequisites": []
+    },
+    {
+      "id": "phy-kinematics",
+      "subject": "Physics",
+      "name": "Kinematics",
+      "difficulty": 4,
+      "estimatedHours": 12,
+      "prerequisites": ["phy-units"]
+    },
+    {
+      "id": "chem-mole",
+      "subject": "Chemistry",
+      "name": "Mole Concept",
+      "difficulty": 3,
+      "estimatedHours": 8,
+      "prerequisites": []
+    },
+    {
+      "id": "chem-atomic",
+      "subject": "Chemistry",
+      "name": "Atomic Structure",
+      "difficulty": 3,
+      "estimatedHours": 8,
+      "prerequisites": ["chem-mole"]
+    }
+  ]
+}
